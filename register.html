@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blue Collar — Ro'yxatdan o'tish</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <div class="brand">
+
+    <div class="brand-text">
+      <div class="brand-name">Blue Collar</div>
+      <div class="brand-tagline">Qurilish xizmatlari platformasi</div>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="card">
+
+    <!-- Form view -->
+    <div id="formView">
+      <div class="card-header">
+        <div class="card-title">Ro'yxatdan o'ting</div>
+        <div class="card-sub">Professional ustalar va mardikorlar uchun</div>
+      </div>
+
+      <form id="regForm" novalidate>
+
+        <!-- Ism / Familya -->
+        <div class="form-row">
+          <div class="field" id="f-first">
+            <label for="firstName">Ism</label>
+            <input type="text" id="firstName" placeholder="Sardor" />
+            <span class="err-msg">Ismingizni kiriting</span>
+          </div>
+          <div class="field" id="f-last">
+            <label for="lastName">Familya</label>
+            <input type="text" id="lastName" placeholder="Toshmatov" />
+            <span class="err-msg">Familyangizni kiriting</span>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="field" id="f-email">
+          <label for="email">Email manzil</label>
+          <input type="email" id="email" placeholder="sardor@example.com" />
+          <span class="err-msg">To'g'ri email kiriting</span>
+        </div>
+
+        <!-- Yosh -->
+        <div class="field" id="f-age">
+          <label for="age">Yosh</label>
+          <input type="number" id="age" placeholder="25" min="18" max="65" />
+          <span class="err-msg">18 — 65 yosh oralig'ida bo'lishi kerak</span>
+        </div>
+
+        <!-- Jins -->
+        <div class="field" id="f-gender">
+          <label>Jins</label>
+          <div class="gender-pills">
+            <label class="pill-label">
+              <input type="radio" name="gender" value="male" />
+              <div class="pill-btn"><span class="icon">👷</span> Erkak</div>
+            </label>
+            <label class="pill-label">
+              <input type="radio" name="gender" value="female" />
+              <div class="pill-btn"><span class="icon">👩‍🔧</span> Ayol</div>
+            </label>
+            <label class="pill-label">
+              <input type="radio" name="gender" value="other" />
+              <div class="pill-btn"><span class="icon">🔧</span> Boshqa</div>
+            </label>
+          </div>
+          <span class="err-msg" id="gender-err">Jinsni tanlang</span>
+        </div>
+
+
+        <button type="submit" class="btn-submit" id="submitBtn">
+          RO'YXATDAN O'TISH
+        </button>
+
+      </form>
+
+      <div class="divider"><span>allaqachon a'zomisiz?</span></div>
+      <div class="login-link">
+        Hisobingiz bormi? <a href="#">Kirish</a>
+      </div>
+    </div>
+
+    <div class="success-screen" id="successView">
+      <div class="success-icon">✅</div>
+      <div class="success-title">Muvaffaqiyatli!</div>
+      <div class="success-msg">
+        Xush kelibsiz, <span class="success-name" id="successName"></span>!<br/>
+        Hisobingiz yaratildi. Endi Blue Collar platformasidan foydalanishingiz mumkin.
+      </div>
+      <button class="btn-back" >← Bosh sahifaga</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="./register.js"></script>
+
+</body>
+</html>

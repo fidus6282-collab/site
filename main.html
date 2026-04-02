@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Atmosphere — Koinotni O'rganing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="star">✦</span>
+                Learning Atmosphere
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Bosh sahifa</a>
+                <a href="#solar" class="nav-link">Quyosh Tizimi</a>
+                <a href="#satellites" class="nav-link">Sun'iy Yo'ldoshlar</a>
+                <a href="#bigbang" class="nav-link">Big Bang</a>
+                <a href="#gallery" class="nav-link">Galereya</a>
+                <a href="#contact" class="nav-link">Aloqa</a>
+                <button class="btn-toggle"><span class="spanBtn">🌓</span></button>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+    </header>
+
+  <section class="hero" id="home">
+    
+    <!-- Video Background -->
+    <video class="hero-video" autoplay loop muted playsinline>
+        <source src="./3856692767-preview.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Qora overlay (tekstni o‘qilishi uchun) -->
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <p class="hero-eyebrow">✦ NASA • ESA • Koinot Fanlari</p>
+        <h1 class="hero-title">Koinotni<br>O'rganing</h1>
+        <p class="hero-desc">
+            Sayyoralar, yulduzlar va galaktikalar sirlarini oddiy va qiziqarli tarzda bilib oling.
+        </p>
+        <div class="hero-buttons">
+            <a href="#solar" class="btn primary">Boshlash</a>
+            <a href="#bigbang" class="btn secondary">Big Bang haqida</a>
+        </div>
+    </div>
+
+    <div class="scroll-hint">
+        Pastga aylantiring ↓
+    </div>
+</section>
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Sayyora</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">13.8B</div>
+            <div class="stat-label">Yil</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">2T</div>
+            <div class="stat-label">Galaktika</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">300000</div>
+            <div class="stat-label">km/s</div>
+        </div>
+    </div>
+
+    <!-- Solar System Section -->
+    <section class="section" id="solar">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">01 • Quyosh Tizimi</span>
+                <h2>Solar System</h2>
+                <p>Quyosh tizimidagi sayyoralarni tanishing. Har bir kartochkaga bosing.</p>
+            </div>
+
+            <div class="planets-grid" id="planetsGrid">
+                <!-- JavaScript orqali to'ldiriladi -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Satellites Section -->
+    <section class="section" id="satellites">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">02 • Sun'iy Yo'ldoshlar</span>
+                <h2>Satellites</h2>
+                <p>Insoniyat yaratgan kosmik texnologiyalar</p>
+            </div>
+
+            <div class="sat-intro">
+                <div class="sat-text">
+                    <h3>Sun'iy yo'ldosh nima?</h3>
+                    <p>Sun'iy yo'ldosh — Yer atrofida aylanadigan inson yaratgan qurilma. Ular aloqa, navigatsiya, ob-havo va ilmiy tadqiqotlar uchun ishlatiladi.</p>
+                    <p>Birinchi sun'iy yo'ldosh <strong>Sputnik-1</strong> 1957-yilda Sovet Ittifoqi tomonidan uchirilgan.</p>
+                </div>
+                <div class="sat-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVT13P-P2ppQl_pSBCZQkDirw8IjUT1H_IA&s" alt="Sun'iy yo'ldosh">
+                    <p class="image-caption">Zamonaviy sun'iy yo'ldosh</p>
+                </div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📡</div>
+                    <h4>Aloqa yo'ldoshlari</h4>
+                    <p>Internet, telefon va TV signallarini uzatish uchun ishlatiladi.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛰️</div>
+                    <h4>GPS va navigatsiya</h4>
+                    <p>Joylashuvni aniqlash uchun 24 ta sun'iy yo'ldosh ishlatiladi.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔭</div>
+                    <h4>Ilmiy yo'ldoshlar</h4>
+                    <p>Hubble, James Webb kabi teleskoplar koinotni o'rganadi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="bigbang">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">03 • Koinot Tarixi</span>
+                <h2>Big Bang</h2>
+                <p>13.8 milliard yil oldin sodir bo'lgan ulkan voqea</p>
+            </div>
+
+            <div class="bigbang-intro">
+      
+                <div class="bigbang-text">
+                    <h3>Koinot qanday paydo bo'lgan?</h3>
+                    <p>Big Bang nazariyasiga ko'ra, koinot 13.8 milliard yil oldin juda kichik, issiq va zich nuqtadan paydo bo'lgan. Bu nuqta portlab, vaqt, makon va barcha materiya yaratilgan.</p>
+                    <p>Hozirgi kunda koinot hali ham kengaymoqda va olimlar uni o'rganishda davom etmoqda.</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="time">13.8 milliard yil oldin</span>
+                        <h3>Big Bang</h3>
+                        <p>Koinot juda kichik va issiq nuqtadan kengaya boshladi. Vaqt va makon shu paytda paydo bo'ldi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="time">3 daqiqa o'tgach</span>
+                        <h3>Birinchi atomlar</h3>
+                        <p>Vodorod va geliy yadrolari hosil bo'ldi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="time">380 000 yil o'tgach</span>
+                        <h3>Birinchi atomlar to'liq hosil bo'ldi</h3>
+                        <p>Koinot shaffof bo'ldi va yorug'lik erkin tarqala boshladi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="time">200 million yil o'tgach</span>
+                        <h3>Birinchi yulduzlar</h3>
+                        <p>Gaz bulutlaridan birinchi yulduzlar yondi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">04 • Galereya</span>
+                <h2>Gallery</h2>
+                <p>NASA va ESA rasmlari</p>
+            </div>
+
+            <div class="gallery" id="gallery">
+
+              <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/600px-The_Earth_seen_from_Apollo_17.jpg" alt="Yer">
+                    <div class="gallery-info">
+                        <p><a href="https://kun.uz/118350?q=%2Fuz%2F118350">Yer (Apollo 17)</a></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF98sbQeNeSMz3nbGKwwnh4XyFU-ojyeNghA&s" alt="Galaktika">
+                    <div class="gallery-info">
+                        <p><a href="https://en.wikipedia.org/wiki/Spiral_galaxy" target="_blank">Spiral galaktika</a></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://data.daryo.uz/media/cache/2021/03/photo_2021-03-27_21-25-46-680x597-680x597.jpg" alt="Tumanlik">
+                    <div class="gallery-info">
+                        <p><a href="https://en.wikipedia.org/wiki/Nebula" target="_blank">Kosmik tumanlik</a></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/600px-Black_hole_-_Messier_87_crop_max_res.jpg" alt="Qora tuynuk">
+                    <div class="gallery-info">
+                        <p><a href="https://en.wikipedia.org/wiki/Black_hole" target="_blank">M87 Qora tuynuk</a></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4c7kocZlzz3rQJvvWloqGk3PlRrDo8QJE4Q&s" alt="Big Bang">
+                    <div class="gallery-info">
+                        <p><a href="https://en.wikipedia.org/wiki/Big_Bang" target="_blank">Big Bang</a></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://rost24.uz/storage/c3/0f/b4/2494/conversions/photo_2022-03-29_23-06-23-large.jpg" alt="Sun'iy yo'ldosh">
+                    <div class="gallery-info">
+                        <p><a href="https://en.wikipedia.org/wiki/Satellite" target="_blank">Sun'iy yo'ldosh</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">05 • Aloqa</span>
+                <h2>Contact</h2>
+                <p>Savollaringiz bo'lsa yozing</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Biz bilan bog'laning</h3>
+                    <p>Learning Atmosphere — astronomiyani o'rganish uchun sodda platforma.</p>
+                    <p><strong>NASA</strong> • <strong>ESA</strong> ma'lumotlariga asoslangan.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="name" placeholder="Ismingiz" required>
+                    <input type="email" id="email" placeholder="Email manzilingiz" required>
+                    <textarea id="message" rows="6" placeholder="Xabaringiz..." required></textarea>
+                    <button type="submit" class="btn primary">Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p class="footer-logo">Learning Atmosphere</p>
+                    <p>Koinotni o'rganish — cheksiz sayohat</p>
+                </div>
+                <div>
+                    <p><strong>Manbalar:</strong></p>
+                    <a href="https://nasa.gov" target="_blank">NASA</a> • 
+                    <a href="https://esa.int" target="_blank">ESA</a>
+                </div>
+                <div class="social-links">
+                    <p><strong>Bizni kuzating:</strong></p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Twitter">
+                            <img src="./img/IMAGE.png" alt="Twitter">
+                        </a>
+                        <a href="#" class="social-icon" title="Facebook">
+                            <img src="./img/Vector (9).png" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-icon" title="Pinterest">
+                            <img src="./img/Vector (10).png" alt="Pinterest">
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <img src="./img/Vector (11).png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Learning Atmosphere • Boshlovchilar uchun sodda sayt</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Oddiy modal (sayyoralar uchun) -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">✕</button>
+            <h2 id="modalTitle">Sayyora nomi</h2>
+            <p id="modalDesc">Ma'lumot...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
